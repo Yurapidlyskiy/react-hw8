@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Menu from './Navbar/Menu';
+import Main from './Main/Main';
+import Footer from './Footer/Footer'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+    return (
+        <div>
+            <Menu />
+            <Main 
+            imgLink="https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_01.gif"
+            alt="img"/>
+            <Footer ftr="it's"/>
+        </div>
+    )
 }
-
-export default App;
